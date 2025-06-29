@@ -1,4 +1,5 @@
 # Windows Terminal
+Make sure you are using Powershell 7+
 My Powershell theme setup
 
 ## Enable Acrylic Tab Row
@@ -47,3 +48,14 @@ My Powershell theme setup
 - If the changes doesn't persist you need to paste into notepad the command you type after you selected a theme.
 - For example:
 **``oh-my-posh init pwsh --config 'C:\Users\carlsebolino\AppData\Local\Programs\oh-my-posh\themes\hotstick.minimal.omp.json' | Invoke-Expression``**
+
+## Powershell Modules
+- [z](https://www.hanselman.com/blog/spend-less-time-cding-around-directories-with-the-powershell-z-shortcut)
+- Install the module with this command: `Install-Module z -AllowClobber`
+- [Terminal Icons](https://www.powershellgallery.com/packages/Terminal-Icons/0.11.0)
+- [PSReadlineHistory](https://www.powershellgallery.com/packages/PSReadlineHistory/)
+
+- Import your modules: `Import-Module -Name <module_name>`
+- [Show history while typing ](https://stackoverflow.com/questions/77015369/how-to-enable-history-picklist-while-typing)
+    - `Set-PSReadLineOption -PredictionViewStyle ListView`
+    - Add to profile
